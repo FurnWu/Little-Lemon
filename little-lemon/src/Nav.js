@@ -1,5 +1,13 @@
-<nav>
-    <ul>
-        <li><img src="Logo.svg"/></li>
-    </ul>
-</nav>
+
+function Nav() {
+    return (
+   <nav>
+
+        Welcome to Little Lemon
+
+    </nav>
+    )
+};
+
+
+export default Nav;

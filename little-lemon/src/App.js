@@ -1,10 +1,11 @@
-
+import React from 'react';
+import Nav from './Nav.js';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-     Welcome to Little Lemon!
+      <Nav />
     </div>
   );
 }
