@@ -1,4 +1,4 @@
-import myLogo from './Logo.svg'
+import myLogo from './Assets/Logo.svg'
 function Nav() {
     return (
     <nav>
