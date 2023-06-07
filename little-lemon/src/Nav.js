@@ -1,10 +1,9 @@
 
 function Nav() {
     return (
-   <nav>
-
+    <nav>
         Welcome to Little Lemon
-
+        <img src='Logo.svg' alt="Logo" />
     </nav>
     )
 };
