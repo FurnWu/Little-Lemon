@@ -1,11 +1,11 @@
-
+import myLogo from './Logo.svg'
 function Nav() {
     return (
     <nav>
-        Welcome to Little Lemon
-        <img src='Logo.svg' alt="Logo" />
+        <img src={myLogo} alt="Little Lemon Logo" />
     </nav>
-    )
+
+    );
 };
 
 
