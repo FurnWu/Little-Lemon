@@ -5,17 +5,19 @@ import Booking from './BookingPage';
 function Nav() {
     return (
     <div className='nav-main'>
-         <nav>
-
-            <img src={logo} alt="Little Lemon Logo" />
-            <ul><Link to="/" className="nav-item">Home</Link></ul>
-            <ul>About</ul>
-            <ul>Menu</ul>
-            <ul><Link to="/reservations" className="nav-item">Reservations</Link></ul>
-            <ul>Order Online</ul>
-            <ul>Login</ul>
-
-    </nav>
+        <nav>
+            <Link to="/" className="nav-item" ><img src={logo} alt="Little Lemon Logo" /></Link>
+    
+        <ul>
+            <li><Link to="/" className="nav-item" style={{ textDecoration: 'none' }}>Home</Link></li>
+            <li>About</li>
+            <li>Menu</li>
+            <li><Link to="/reservations" className="nav-item" style={{ textDecoration: 'none' }}>Reservations</Link></li>
+            <li>Order Online</li>
+            <li>Login</li>
+        </ul>
+    
+        </nav>
     <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/reservations" element={<Booking />} />

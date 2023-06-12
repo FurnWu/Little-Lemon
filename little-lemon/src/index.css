@@ -1,6 +1,23 @@
+@import url(https://fonts.googleapis.com/css?family=Karla);
 
-/* Nav Bar */
+/*
+===============
+   Nav Bar
+===============
+*/
 nav {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  align-content: center;
+  padding: 0.6rem;
+  font-family: 'Karla';
+  font-size: 18px; font-weight: 600;
+}
+
+ul li {
+  display: inline-flex;
+  justify-content: space-around;
+  list-style: none;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
