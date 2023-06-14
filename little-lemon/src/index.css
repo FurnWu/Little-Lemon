@@ -41,18 +41,46 @@ nav a:active {
 }
 */
 
+.home {
+  position: relative;
+}
+
 .hero {
-  display: flex;
-  text-align: left;
+  display: grid;
   background-color: #495E57;
-  padding-inline: 10rem;
+  padding-inline:12rem;
+  padding-top: 0.5rem;
+  padding-bottom: 2rem;
   margin-top: 0.5rem;
+  position: relative;
+
 }
 
-img {
-  width: 200px;
+.foodhero {
+  width: 250px;
+  position: absolute;
+  right: 16rem;
+  top: 6rem;
 }
 
-section {
-  column-width: 50rem;
+header {
+  width: 300px;
+  text-align: left;
+  
 }
+
+button {
+  
+  justify-content: space-around;
+  color: black;
+  background-color: #F4CE14;
+}
+
+.btn {
+  display: flex;
+  width: 300px;
+  background-color: cadetblue;
+}
+/*<section>
+                <img src={heroImage} alt="Restaurant Food" />
+            </section>*/
