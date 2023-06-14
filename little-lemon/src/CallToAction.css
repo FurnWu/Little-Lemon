@@ -1,0 +1,87 @@
+@import url(https://fonts.googleapis.com/css?family=Markazi+Text);
+@import url(https://fonts.googleapis.com/css?family=Karla);
+/*
+====================
+   CallToAction
+====================
+*/
+h1 {
+    font-family: 'Markazi Text';
+    font-size: 64px; font-weight: lighter; line-height: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: 1.5rem;
+    
+}
+h2 {
+    font-family: 'Markazi Text';
+    font-size: 40px; font-weight: lighter; line-height: 35px;
+    margin-top: auto;
+    margin-bottom: auto;
+    
+    padding-bottom: 0.5rem;
+}
+p {
+    font-family: 'Karla'; line-height: 4px;
+    color: white;
+}
+
+.banner {
+    position: relative; 
+  }
+  
+  .hero {
+    display: grid;
+    background-color: #495E57;
+    padding-inline:15rem;
+    padding-top: 0.5rem;
+    padding-bottom: 2rem;
+    margin-top: 0.5rem;
+    position: relative;
+  
+  }
+  
+  .foodhero {
+    display: grid;
+    position: absolute;
+    right: 15rem;
+    top: 2rem;
+    width: 300px; height: 337px; object-fit: cover; object-position: 100% 50%;
+    border-radius: 16px;
+  }
+  
+  header {
+    width: 300px;
+    text-align: left;
+    
+  }
+  
+  button {
+    background-color: #F4CE14;
+    border: none;
+    color: black; font-family: 'Karla'; font-weight: bolder;
+    padding: 10px 26px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+  }
+
+button:hover {
+    background-color: #F4CE14;
+    box-shadow: 0 4px #333333;
+}
+
+button:active {
+  background-color: #F4CE14;
+  box-shadow: 1 4px #333333;
+  transform: translateY(1px);
+}
+  .btn {
+    display: flex;
+    width: 300px;
+    
+  }
