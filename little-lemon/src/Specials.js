@@ -1,6 +1,30 @@
+
+const specialmenu = [
+    {
+        
+        title: "React Space",
+        description:
+          "Handy tool belt to create amazing AR components in a React app, with redux integration via middleware️",
+        getImageSrc: () => require("./Assets/GreekSalad.jpg"),
+    }
+
+];
+
 function Specials() {
     return(
-        <h1>This week specials!</h1>
+        <div>
+      {specialmenu.map((menu) => {
+              const { title, description, getImageSrc } = menu;
+              return (
+                <li>
+                    <img src={getImageSrc()} alt="test" />
+                  <h1>menu: {title}</h1>
+                  <h1>detail: {description}</h1>
+                </li>
+              );
+            })}
+        </div>
+        
     );
     };
     

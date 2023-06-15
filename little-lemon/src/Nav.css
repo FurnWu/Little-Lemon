@@ -5,15 +5,20 @@
    Nav Bar
 ===============
 */
+.nav-main {
+  margin: 0;
+}
 nav {
   display: flex;
   justify-content: space-around;
   align-content: center;
   padding-inline: 8rem;
-  padding-bottom: 0.2rem;
-  padding-top: 0.1rem;
+  padding-bottom: 0.6rem;
+  padding-top: 0.4rem;
   font-family: 'Karla';
   font-size: 16px; font-weight: 600;
+  background-color: #EDEFEE;
+
 }
 
 nav ul li {

@@ -21,13 +21,14 @@ h2 {
     
     padding-bottom: 0.5rem;
 }
-p {
+.hero p {
     font-family: 'Karla'; line-height: 4px;
     color: white;
 }
 
 .banner {
     position: relative; 
+    
   }
   
   .hero {
@@ -36,7 +37,7 @@ p {
     padding-inline:15rem;
     padding-top: 0.5rem;
     padding-bottom: 2rem;
-    margin-top: 0.5rem;
+    margin-top: 0;
     position: relative;
   
   }
