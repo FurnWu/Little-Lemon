@@ -57,7 +57,7 @@ h2 {
     
   }
   
-  button {
+  .hero-btn {
     background-color: #F4CE14;
     border: none;
     color: black; font-family: 'Karla'; font-weight: bolder;
@@ -71,12 +71,12 @@ h2 {
     border-radius: 16px;
   }
 
-button:hover {
+.hero-btn:hover {
     background-color: #F4CE14;
     box-shadow: 0 4px #333333;
 }
 
-button:active {
+.hero-btn:active {
   background-color: #F4CE14;
   box-shadow: 1 4px #333333;
   transform: translateY(1px);

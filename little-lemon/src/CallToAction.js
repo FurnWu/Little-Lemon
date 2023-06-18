@@ -18,7 +18,7 @@ return(
             </header>
             <div className="btn">
                 <Link to="/reservations" style={{ textDecoration: 'none' }}>
-                    <button>Reserve a Table</button>
+                    <button className='hero-btn'>Reserve a Table</button>
                 </Link>
             </div>
 

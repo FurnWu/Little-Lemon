@@ -1,6 +1,16 @@
 function Booking() {
     return(
-        <h1>Reservations</h1>
+        <div>
+            <h1>Reservations</h1>
+            <form>
+                <label>
+                   Number of guests:
+                   <input type="number" name="guests" />
+                </label>
+                <button type="Submit">Submit</button>
+            </form>
+        </div>
+        
     );
     };
     
