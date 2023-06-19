@@ -9,9 +9,11 @@ function Booking() {
                 </label>
                 <button type="Submit">Submit</button>
             </form>
+              
         </div>
         
     );
     };
     
     export default Booking;
+

@@ -2,7 +2,7 @@
 const specialmenu = [
     {
         
-        title: "React Space",
+        title: "Lemon Tart",
         description:
           "Handy tool belt to create amazing AR components in a React app, with redux integration via middleware️",
         getImageSrc: () => require("./Assets/GreekSalad.jpg"),
