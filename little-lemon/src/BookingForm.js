@@ -1,8 +1,9 @@
 import { useState } from "react";
+import {Counter} from "./BookingPage"
 
  function BookingForm() {
     const[date, setDate] = useState("")
-    const[availableTimes, setAvailableTimes] = useState("")
+    
     const[guests, setGuests] = useState("1")
     const[occasion, setOccasion] = useState("")
 
@@ -10,8 +11,7 @@ import { useState } from "react";
       e.preventDefault();}
 
     return(
-
-<form style={{display: "grid; max-width: 200px; gap: 20px"}}>
+<div><form style={{display: "grid; max-width: 200px; gap: 20px"}}>
 
 <div className= "date">
     <label htmlForfor="res-date">Choose date</label>
@@ -24,7 +24,7 @@ import { useState } from "react";
 
 <div className="time">
     <label htmlFor="res-time">Choose time</label>
-   <select id="res-time " value ={availableTimes} onChange={(e) => setAvailableTimes(e.target.value)}>
+   <select id="res-time " >
       <option>17:00</option>
       <option>18:00</option>
       <option>19:00</option>
@@ -32,6 +32,7 @@ import { useState } from "react";
       <option>21:00</option>
       <option>22:00</option>
    </select>
+   
 </div>
 
 <div className="guest" >
@@ -53,7 +54,11 @@ import { useState } from "react";
    </div>
    
    <input type="submit" value="Make Your reservation" onSubmit={handleSubmit} />
+   
 </form>
+      <Counter />
+</div>
+
      
       
 

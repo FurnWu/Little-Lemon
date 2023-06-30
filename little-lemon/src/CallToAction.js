@@ -1,5 +1,5 @@
 import heroImage from './Assets/restauranfood.jpg';
-import Booking from './BookingPage';
+import {Booking} from './BookingPage';
 import './CallToAction.css';
 import {Routes, Route, Link} from 'react-router-dom';
 function Hero() {
