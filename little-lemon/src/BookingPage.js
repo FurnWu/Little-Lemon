@@ -1,13 +1,19 @@
 import BookingForm from "./BookingForm";
 import { useReducer } from "react";
+import { fetchAPI } from "./DataAPI";
 
-function updateTimes(availableTimes, action) {
-    if (action.type === 'incremented_age') {
-      return {
-        age: availableTimes.age + 1
-      };
+function updateTimes(state, action) {
+  switch(action.type) {
+    case 'initializeTimes': {
+      return {times : fetchAPI()};
     }
-    throw Error('Unknown action.');
+    case 'incremented_age': {
+      return {age: state.age + 1}
+    }
+    default: {throw Error('Unknown action.');}
+  }
+    
+    
   }
   
   export function Counter() {
@@ -25,6 +31,7 @@ function updateTimes(availableTimes, action) {
     );
   }
   
+
 
 export function Booking() {
 

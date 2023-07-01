@@ -20,6 +20,7 @@ import {Counter} from "./BookingPage"
          id="res-date"
          value={date}
          onChange={(e) => setDate(e.target.value)}/>
+
 </div>
 
 <div className="time">
