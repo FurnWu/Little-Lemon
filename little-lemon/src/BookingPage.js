@@ -2,9 +2,11 @@ import BookingForm from "./BookingForm";
 import { useReducer } from "react";
 import { fetchAPI } from "./DataAPI";
 
+
+
 function updateTimes(state, action) {
   switch(action.type) {
-    case 'initializeTimes': {
+    case 'initialTimes': {
       return {times : fetchAPI()};
     }
     case 'incremented_age': {

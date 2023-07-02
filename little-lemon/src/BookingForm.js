@@ -1,12 +1,19 @@
 import { useState } from "react";
 import {Counter} from "./BookingPage"
+import { fetchAPI } from "./DataAPI";
 
  function BookingForm() {
     const[date, setDate] = useState("")
-    
+  
     const[guests, setGuests] = useState("1")
     const[occasion, setOccasion] = useState("")
-
+   
+   const handleDateChange = (e) => {
+      setDate(e.target.value);
+      return fetchAPI;
+      
+   }
+   console.log(fetchAPI);
     const handleSubmit = (e) => {
       e.preventDefault();}
 
@@ -19,19 +26,21 @@ import {Counter} from "./BookingPage"
          type="date"
          id="res-date"
          value={date}
-         onChange={(e) => setDate(e.target.value)}/>
+         onChange={handleDateChange}/>
 
 </div>
 
 <div className="time">
     <label htmlFor="res-time">Choose time</label>
-   <select id="res-time " >
+   <select id="res-time ">
       <option>17:00</option>
       <option>18:00</option>
       <option>19:00</option>
       <option>20:00</option>
       <option>21:00</option>
       <option>22:00</option>
+      
+      
    </select>
    
 </div>
@@ -58,6 +67,7 @@ import {Counter} from "./BookingPage"
    
 </form>
       <Counter />
+      
 </div>
 
      
