@@ -4,8 +4,84 @@ body {
 }
 
 form {
-    background-color: gray;
+    background-color: silver;
     
     padding-bottom: 3rem;
     border-radius: 16px;
 }   
+
+.fullname {
+    column-count: 2;
+    margin-inline: 30rem;
+    padding-bottom: 0.3rem;
+    
+    
+    }
+.firstname {
+    padding-inline: 1.5rem;
+    background-color: aliceblue;
+    text-align: left;
+}
+.lastname {
+    padding-inline: 1.5rem;
+    background-color: pink;
+    text-align: left;
+}
+
+.contactInfo {
+    column-count: 2;
+    margin-inline: 30rem;
+    padding-bottom: 0.3rem;
+}
+
+.phonenumber {
+    padding-inline: 1.5rem;
+    background-color: aliceblue;
+    text-align: left;
+}
+
+.email {
+    padding-inline: 1.5rem;
+    background-color: pink;
+    text-align: left;
+}
+
+.reservation1 {
+    column-count: 2;
+    margin-inline: 30rem;
+    padding-bottom: 0.3rem;
+}
+
+.date {
+    padding-inline: 1.5rem;
+    background-color: aliceblue;
+    text-align: left;
+}
+
+.time {
+    padding-inline: 1.5rem;
+    background-color: pink;
+    text-align: left;
+}
+
+.reservation2 {
+    column-count: 2;
+    margin-inline: 30rem;
+    padding-bottom: 0.3rem;
+}
+.guest {
+    padding-inline: 1.5rem;
+    background-color: aliceblue;
+    text-align: left;
+}
+.occasion {
+    padding-inline: 1.5rem;
+    background-color: pink;
+    text-align: left;
+}
+
+input[type=text] {
+    border-radius: 4px;
+    padding: 6px 12px;
+    border: 2px solid grey;
+}
