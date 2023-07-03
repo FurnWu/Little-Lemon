@@ -41,6 +41,7 @@ export function Booking() {
     return(
         <div>
             <h1>Reservations</h1>
+            
             <BookingForm />
             
         </div>

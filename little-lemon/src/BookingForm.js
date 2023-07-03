@@ -9,7 +9,7 @@ curr.setDate(curr.getDate());
 var dfaultDate = curr.toISOString().substring(0,10);
 
     const[date, setDate] = useState(dfaultDate)
-   
+    const[chosenTime, setChosenTime] = useState("")
    let defaultTime = fetchAPI(date)
     const listDefaultTime = defaultTime.map(time => <option>{time}</option>)
    
@@ -24,9 +24,14 @@ var dfaultDate = curr.toISOString().substring(0,10);
       //return fetchAPI(date);
       
    }
-   console.log(fetchAPI(date));
+   //console.log(fetchAPI(date));
     const handleSubmit = (e) => {
       e.preventDefault();}
+ 
+console.log(date);
+console.log(chosenTime);
+console.log(guests);
+console.log(occasion);
 
     return(
 <div><form style={{display: "grid; max-width: 200px; gap: 20px" }}>
@@ -44,7 +49,7 @@ var dfaultDate = curr.toISOString().substring(0,10);
 <br></br>
 <div className="time">
     <label htmlFor="res-time">Choose time</label>
-   <select id="res-time ">
+   <select id="res-time " value={chosenTime} onChange={(e) => setChosenTime(e.target.value)}>
       {listDefaultTime}
      
       
@@ -63,13 +68,19 @@ var dfaultDate = curr.toISOString().substring(0,10);
    <div className="occasion">
     <label htmlFor ="occasion">Occasion</label>
    <select id ="occasion" value={occasion} onChange={(e) => setOccasion(e.target.value)}>
+   <optgroup label="Choose you occasion">
+      <option hidden="true">In what occasion?</option>
+      <option>Eat and Chill</option>
+      <option>Friends/Family Reuion</option>
       <option>Birthday</option>
       <option>Anniversary</option>
       <option>Engagement</option>
-      <option>Just chill and eat</option>
       <option>Other</option>
+   </optgroup>
+      
    </select>
    </div>
+   
    <br></br>
    <input type="submit" value="Make Your reservation" onSubmit={handleSubmit} />
    <br></br>
@@ -79,10 +90,13 @@ var dfaultDate = curr.toISOString().substring(0,10);
       
 </div>
 
-     
-      
+
+
 
     );
+
+
     };
+
 
     export default BookingForm;
