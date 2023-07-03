@@ -1,16 +1,27 @@
 import { useState } from "react";
 import {Counter} from "./BookingPage"
 import { fetchAPI } from "./DataAPI";
-
+//['17:00', '18:00', '19:00', '20:00', '21:00', '22:00' ]
  function BookingForm() {
-    const[date, setDate] = useState("")
+
+   var curr = new Date();
+curr.setDate(curr.getDate());
+var dfaultDate = curr.toISOString().substring(0,10);
+
+    const[date, setDate] = useState(dfaultDate)
+   
+   let defaultTime = fetchAPI(date)
+    const listDefaultTime = defaultTime.map(time => <option>{time}</option>)
+   
+    
+
 
     const[guests, setGuests] = useState("1")
     const[occasion, setOccasion] = useState("")
    
    const handleDateChange = (e) => {
       setDate(e.target.value);
-      return fetchAPI(date);
+      //return fetchAPI(date);
       
    }
    console.log(fetchAPI(date));
@@ -24,16 +35,17 @@ import { fetchAPI } from "./DataAPI";
     <label htmlForfor="res-date">Choose date</label>
    <input
          type="date"
+         
          id="res-date"
          value={date}
          onChange={handleDateChange}/>
-
 </div>
+
 <br></br>
 <div className="time">
     <label htmlFor="res-time">Choose time</label>
    <select id="res-time ">
-      <option>00:00</option>
+      {listDefaultTime}
      
       
       

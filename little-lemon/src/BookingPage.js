@@ -2,8 +2,6 @@ import BookingForm from "./BookingForm";
 import { useReducer } from "react";
 import { fetchAPI } from "./DataAPI";
 
-let defaultTime = ['17:00', '18:00', '19:00', '20:00', '21:00', '22:00' ]
-const listDefaultTime = defaultTime.map(time => <option>{time}</option>)
 
 
 
