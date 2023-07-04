@@ -2,7 +2,7 @@
 const specialmenu = [
     {
         
-        title: "Lemon Tart",
+        title: "Greek Salad",
         description:
           "Handy tool belt to create amazing AR components in a React app, with redux integration via middleware️",
         getImageSrc: () => require("./Assets/GreekSalad.jpg"),
@@ -16,11 +16,18 @@ function Specials() {
       {specialmenu.map((menu) => {
               const { title, description, getImageSrc } = menu;
               return (
-                <li>
-                    <img src={getImageSrc()} alt="test" />
+                /*<ul>
+                  <img src={getImageSrc()} alt="test" />
                   <h1>menu: {title}</h1>
                   <h1>detail: {description}</h1>
-                </li>
+                </ul>*/
+                <div class="gallery">
+    
+      <img src={getImageSrc()} alt="Greek Salad" width="600" height="400"/>
+    <div className="title" >{title}</div>
+    <div className="desc">{description}</div>
+  </div>
+                
               );
             })}
         </div>
@@ -29,3 +36,5 @@ function Specials() {
     };
     
     export default Specials;
+
+                /*  */

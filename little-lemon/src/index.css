@@ -52,8 +52,8 @@ form {
 
 .reservation1 {
     display: flex;
-    margin-inline: 28rem;
-    margin-left: 30rem;
+    margin-inline: 30rem;
+    
     padding-bottom: 1rem;
 }
 
@@ -126,7 +126,7 @@ input[type=number] {
     border: 2px solid grey;
 }
 
-textarea {
+/*textarea {
     width:40%;
     height: 150px;
     margin-inline: 28.6rem;
@@ -138,12 +138,29 @@ textarea {
     border-radius: 4px;
     background-color: #f8f8f8;
     resize: none;
-  }
+  }*/
 
 .textbox {
-    background-color: aquamarine;
-    text-align: left;
+    background-color: chocolate;
     margin-inline: 30rem;
+    text-align: left;
+    
 }
 
+.gallery {
+    border: 1px solid #ccc;
+  }
 
+  .gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  desc {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }

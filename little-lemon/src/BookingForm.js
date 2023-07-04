@@ -38,6 +38,7 @@ var dfaultDate = curr.toISOString().substring(0,10);
    }
    //console.log(fetchAPI(date));
     const handleSubmit = (e) => {
+      setIsDisabled(true)
       e.preventDefault();
       
    }
@@ -93,26 +94,7 @@ console.log(occasion);
          onChange={handleDateChange}/>
 </div>
 
-<br></br>
-<div className="time">
-    <label htmlFor="res-time">Time</label><br></br>
-   <select id="res-time " disabled={isDisabled} value={chosenTime} onChange={(e) => setChosenTime(e.target.value)}>
-      {listDefaultTime}
-     
-      
-      
-   </select>
-   
-</div>
-<br></br>
-   </div>
-<div className="reservation2">
-<div className="guest" >
-    <label htmlFor="guests">Number of guests</label><br></br>
-    <input type="number" placeholder="1" min="1" max="12" id="guests" disabled={isDisabled}
-           value = {guests}  onChange={(e) => setGuests(e.target.value)}   />
-</div>
-   
+
 <div className="occasion">
     <label htmlFor ="occasion">Occasion</label><br></br>
    <select id ="occasion" disabled={isDisabled} value={occasion} onChange={(e) => setOccasion(e.target.value)}>
@@ -125,9 +107,25 @@ console.log(occasion);
       <option>Engagement</option>
       <option>Other</option>
    </optgroup>
-      
    </select>
    </div>
+<br></br>
+   </div>
+<div className="reservation2">
+<div className="time">
+    <label htmlFor="res-time">Time</label><br></br>
+   <select id="res-time " disabled={isDisabled} value={chosenTime} onChange={(e) => setChosenTime(e.target.value)}>
+      {listDefaultTime}
+   </select>
+</div>
+
+<div className="guest" >
+    <label htmlFor="guests">Number of guests</label><br></br>
+    <input type="number" placeholder="1" min="1" max="12" id="guests" disabled={isDisabled}
+           value = {guests}  onChange={(e) => setGuests(e.target.value)}   />
+</div>
+   
+
 </div>
 
 <br></br>
@@ -135,12 +133,13 @@ console.log(occasion);
       <label htmlFor="message">Message:</label><br></br>
       <textarea id="message" name="message" disabled={isDisabled} value={formData.message} onChange={handleChange}/>
    <br></br>
-   
    </div>
+
    <input type="submit" value="Make Your reservation"  onSubmit={handleSubmit} /> 
    <br></br>
    <button onClick={handleSubmitClick}>Submit</button>
    <button onClick={handleEditClick}>Edit</button>
+   <button onSubmit={handleSubmit}>Book Now</button>
 </form>
 <br></br>
       
