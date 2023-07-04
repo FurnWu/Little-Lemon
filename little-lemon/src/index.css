@@ -11,70 +11,80 @@ form {
 }   
 
 .fullname {
-    column-count: 2;
+    display: flex;
     margin-inline: 30rem;
     padding-bottom: 0.3rem;
     
     
     }
 .firstname {
+    flex: 50%;
     padding-inline: 1.5rem;
     background-color: aliceblue;
     text-align: left;
 }
 .lastname {
+    flex: 50%;
     padding-inline: 1.5rem;
     background-color: pink;
     text-align: left;
 }
 
 .contactInfo {
-    column-count: 2;
+    display: flex;
     margin-inline: 30rem;
     padding-bottom: 0.3rem;
 }
 
 .phonenumber {
+    flex: 50%;
     padding-inline: 1.5rem;
     background-color: aliceblue;
     text-align: left;
 }
 
 .email {
+    flex: 50%;
     padding-inline: 1.5rem;
     background-color: pink;
     text-align: left;
 }
 
 .reservation1 {
-    column-count: 2;
-    margin-inline: 30rem;
-    padding-bottom: 0.3rem;
+    display: flex;
+    margin-inline: 28rem;
+    margin-left: 30rem;
+    padding-bottom: 1rem;
 }
 
 .date {
+    flex: 50%;
     padding-inline: 1.5rem;
     background-color: aliceblue;
     text-align: left;
 }
 
 .time {
+    flex: 50%;
     padding-inline: 1.5rem;
     background-color: pink;
     text-align: left;
 }
 
 .reservation2 {
-    column-count: 2;
-    margin-inline: 30rem;
+    display: flex;
+    margin-inline: 28rem;
+    margin-left: 30rem;
     padding-bottom: 0.3rem;
 }
 .guest {
+    flex: 50%;
     padding-inline: 1.5rem;
     background-color: aliceblue;
     text-align: left;
 }
 .occasion {
+    flex: 50%;
     padding-inline: 1.5rem;
     background-color: pink;
     text-align: left;
@@ -85,3 +95,55 @@ input[type=text] {
     padding: 6px 12px;
     border: 2px solid grey;
 }
+
+input[type=tel] {
+    border-radius: 4px;
+    padding: 6px 12px;
+    border: 2px solid grey;
+}
+
+input[type=email] {
+    border-radius: 4px;
+    padding: 6px 12px;
+    border: 2px solid grey;
+}
+
+input[type=date] {
+    border-radius: 4px;
+    padding: 6px 12px;
+    border: 2px solid grey;
+}
+
+select {
+    border-radius: 4px;
+    padding: 6px 12px;
+    border: 2px solid grey;
+}
+
+input[type=number] {
+    border-radius: 4px;
+    padding: 6px 12px;
+    border: 2px solid grey;
+}
+
+textarea {
+    width:40%;
+    height: 150px;
+    margin-inline: 28.6rem;
+    margin-left: 27.6rem;
+    margin-right: 29.5rem;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+  }
+
+.textbox {
+    background-color: aquamarine;
+    text-align: left;
+    margin-inline: 30rem;
+}
+
+
