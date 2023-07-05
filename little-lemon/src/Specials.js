@@ -1,21 +1,25 @@
+import './Specials.css';
 
 const specialmenu = [
     {
         title: "Greek Salad",
+        price: "$12.99",
         description:
-          "Handy tool belt to create amazing AR components in a React app, with redux integration via middleware️",
+          "The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons.",
         getImageSrc: () => require("./Assets/GreekSalad.jpg"),
     },
     {
       title: "Bruschetta",
+      price: "$5.99",
       description:
-      "Handy tool belt to create amazing AR components in a React app, with redux integration via middleware️",
+      "Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil.",
       getImageSrc: () => require("./Assets/Bruschetta.jpg"),
   },
   {
        title: "Little Lemon Shortcake",
+       price: "$5.00",
        description:
-       "Handy tool belt to create amazing AR components in a React app, with redux integration via middleware️",
+       "This comes straight from grandma's recipe book, every last ingredient has been sourced and is as authentic as can be imagined.",
        getImageSrc: () => require("./Assets/Lemon.jpg"),
   },
 
@@ -25,7 +29,7 @@ function Specials() {
     return(
         <div>
       {specialmenu.map((menu) => {
-      const { title, description, getImageSrc } = menu;
+      const { title, price, description, getImageSrc } = menu;
     return (
       
         <div className="responsive">
@@ -33,7 +37,10 @@ function Specials() {
             <div className="gallery-layout">
               <div class="gallery">
                 <img src={getImageSrc()} alt={title} />
-                <div className="card-title" >{title}</div>
+                <div className='whole-title'>
+                    <div className="card-title" >{title}</div>
+                  <div className="price-tag">{price}</div>
+                </div>
                 <div className="desc">{description}</div>
               </div>
             </div>
