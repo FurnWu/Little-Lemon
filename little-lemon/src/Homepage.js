@@ -5,6 +5,9 @@ function Home() {
 return(
     <div className="home">
         <Hero />
+        <br></br>
+        <br></br>
+        <br></br>
         <Specials />
         
     </div>
