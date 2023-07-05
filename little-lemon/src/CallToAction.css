@@ -45,16 +45,16 @@ h2 {
   .foodhero {
     display: grid;
     position: absolute;
-    right: 15rem;
+    right: 16rem;
     top: 2rem;
-    width: 300px; height: 337px; object-fit: cover; object-position: 100% 50%;
+    width: 310px; height: 350px; object-fit: cover; object-position: 100% 50%;
     border-radius: 16px;
   }
   
   header {
     width: 300px;
     text-align: left;
-    
+    margin-left: 1rem;
   }
   
   .hero-btn {
@@ -69,6 +69,7 @@ h2 {
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 16px;
+    margin-left: 1rem;
   }
 
 .hero-btn:hover {
