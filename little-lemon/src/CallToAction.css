@@ -70,11 +70,12 @@ h2 {
     cursor: pointer;
     border-radius: 16px;
     margin-left: 1rem;
+    box-shadow: 0 2px 2px 0 #333333;
   }
 
 .hero-btn:hover {
     background-color: #F4CE14;
-    box-shadow: 0 4px #333333;
+    box-shadow: 0 5px 1px #333333;
 }
 
 .hero-btn:active {
