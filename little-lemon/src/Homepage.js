@@ -1,13 +1,13 @@
 import Hero from "./CallToAction";
 import Specials from "./Specials";
+import Testimonial from "./CustomersSay"
 
 function Home() {
 return(
     <div className="home">
         <Hero />
-        
-        
-            <Specials />
+        <Specials />
+        <Testimonial/>
         
         
     </div>

@@ -1,0 +1,36 @@
+@import url(https://fonts.googleapis.com/css?family=Markazi+Text);
+@import url(https://fonts.googleapis.com/css?family=Karla);
+/*
+====================
+   Testimonial
+====================
+*/
+.responsiveII {
+    display: inline-flex;
+
+}
+
+.customer-card {
+    display: inline-flex;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    font-family: 'Karla';
+    color: #333333;
+    box-shadow: 0 10px 20px 0 silver;
+}
+
+.profile {
+    
+    font-weight: bold;
+}
+
+.review {
+    
+    width: 11rem;
+    text-align: left;
+    margin-top: 1rem;
+    padding-left: 0.8rem;
+    font-size: 14px;
+
+}

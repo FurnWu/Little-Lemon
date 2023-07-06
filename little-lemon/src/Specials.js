@@ -49,14 +49,8 @@ function Specials() {
                 <div className="card-footer">Order a delivery <img src={deliveryIcon} alt="delivery" style ={{height: '18px', width:'18px', marginLeft:5}} /></div>
               </div>
             </div>
-           </ul> 
+           </ul>
             </div>
-      
-          
-            
-          
-  
-                
               );
             })}
         </div>
@@ -66,4 +60,4 @@ function Specials() {
     
     export default Specials;
 
-                /*  */
+               
