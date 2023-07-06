@@ -1,4 +1,5 @@
 import './Specials.css';
+import deliveryIcon from './Assets/delivery.svg'
 
 const specialmenu = [
     {
@@ -16,7 +17,7 @@ const specialmenu = [
       getImageSrc: () => require("./Assets/Bruschetta.jpg"),
   },
   {
-       title: "Little Lemon Shortcake",
+       title: "Little Lemon Cake",
        price: "$5.00",
        description:
        "This comes straight from grandma's recipe book, every last ingredient has been sourced and is as authentic as can be imagined.",
@@ -28,10 +29,13 @@ const specialmenu = [
 function Specials() {
     return(
         <div>
+          <div className='specials-header'>
+            <h1 style={{fontSize: '57px', backgroundColor:'white', paddingBottom:'1rem', paddingRight:'20.5rem'}}>This week specials!</h1>
+            <button style={{marginBlock:'1.3rem', fontSize:'16px'}} className='hero-btn'>Online Menu</button>
+          </div>
       {specialmenu.map((menu) => {
       const { title, price, description, getImageSrc } = menu;
     return (
-      
         <div className="responsive">
           <ul>
             <div className="gallery-layout">
@@ -42,6 +46,7 @@ function Specials() {
                   <div className="price-tag">{price}</div>
                 </div>
                 <div className="desc">{description}</div>
+                <div className="card-footer">Order a delivery <img src={deliveryIcon} alt="delivery" style ={{height: '18px', width:'18px', marginLeft:5}} /></div>
               </div>
             </div>
            </ul> 

@@ -6,9 +6,17 @@
 ====================
 */
 
+.specials-header {
+  background-color: white;
+  display: flex;
+  margin-inline: 16rem;
+  padding-top: 6rem;
+}
+
 .gallery {
-    /*border: 1px solid royalblue;*/
+  display: grid;
     width: 90%;
+    height: 32rem;
     background-color: #EDEFEE;
     margin-inline: -1rem;
     border-radius: 16px 16px 0px 0px;
@@ -31,18 +39,14 @@
 
   .card-title {
     width: 11.5rem;
-    
     font-family: 'Karla';
     font-size: 18px; font-weight: bold;
     text-align: left;
     padding: 15px;
-    
-    
   }
 
   .price-tag {
     width: 5rem;
-    
     font-family: 'Karla';
     font-size: 16px; font-weight: bold; color: coral; 
     text-align: right;
@@ -55,6 +59,15 @@
     font-family: 'Karla';
     font-size: 16px;
   }
+
+  .card-footer {
+    margin-bottom: 1rem;
+    padding: 15px;
+    vertical-align: bottom;
+    text-align: left;
+    font-family: 'Karla'; font-weight: bold;
+    font-size: 16px;
+  }
   
   * {
     box-sizing: border-box;
@@ -65,7 +78,7 @@
     display: inline-flex;
     width: 24%;
     /*background-color: coral;*/
-    margin-block: 5rem;
+    margin-top: 0.1rem;
     margin-inline: -1.3rem;
     
     
