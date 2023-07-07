@@ -39,7 +39,7 @@ function updateTimes(state, action) {
 export function Booking() {
 
     return(
-        <div>
+        <div style={{backgroundColor:"#495E57"}}>
             <h1>Reservations</h1>
             
             <BookingForm />

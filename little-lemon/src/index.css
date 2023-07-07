@@ -1,14 +1,21 @@
+@import url(https://fonts.googleapis.com/css?family=Markazi+Text);
+@import url(https://fonts.googleapis.com/css?family=Karla);
+
 body {
     margin: 0;
     background-color: white;
 }
 
 form {
-    background-color: silver;
-    
-    padding-bottom: 3rem;
+    background-color: #EDEFEE;
+    font-family: 'Karla';
+    padding-block: 2rem;
     border-radius: 16px;
 }   
+
+sup {
+    color: red;
+}
 
 .fullname {
     display: flex;
@@ -20,13 +27,13 @@ form {
 .firstname {
     flex: 50%;
     padding-inline: 1.5rem;
-    background-color: aliceblue;
+    background-color: none;
     text-align: left;
 }
 .lastname {
     flex: 50%;
     padding-inline: 1.5rem;
-    background-color: pink;
+    background-color: none;
     text-align: left;
 }
 
@@ -39,14 +46,14 @@ form {
 .phonenumber {
     flex: 50%;
     padding-inline: 1.5rem;
-    background-color: aliceblue;
+    background-color:none;
     text-align: left;
 }
 
 .email {
     flex: 50%;
     padding-inline: 1.5rem;
-    background-color: pink;
+    background-color: none;
     text-align: left;
 }
 
@@ -58,16 +65,17 @@ form {
 }
 
 .date {
-    flex: 50%;
+    flex:50%;
     padding-inline: 1.5rem;
-    background-color: aliceblue;
+    background-color: none;
     text-align: left;
 }
 
 .time {
     flex: 50%;
     padding-inline: 1.5rem;
-    background-color: pink;
+    margin-left: 1.9rem;
+    background-color: none;
     text-align: left;
 }
 
@@ -80,13 +88,14 @@ form {
 .guest {
     flex: 50%;
     padding-inline: 1.5rem;
-    background-color: aliceblue;
+    background-color: none;
     text-align: left;
 }
 .occasion {
-    flex: 50%;
+    flex:50%;
+    
     padding-inline: 1.5rem;
-    background-color: pink;
+    background-color: none;
     text-align: left;
 }
 
@@ -126,23 +135,22 @@ input[type=number] {
     border: 2px solid grey;
 }
 
-/*textarea {
-    width:40%;
-    height: 150px;
-    margin-inline: 28.6rem;
-    margin-left: 27.6rem;
-    margin-right: 29.5rem;
-    padding: 12px 20px;
+textarea {
+    width:26.5rem;
+    height: 8rem;
+    padding: 10px 12px;
     box-sizing: border-box;
-    border: 2px solid #ccc;
+    border: 2px solid grey;
     border-radius: 4px;
     background-color: #f8f8f8;
     resize: none;
-  }*/
+  }
 
 .textbox {
-    background-color: chocolate;
-    margin-inline: 30rem;
+    background-color: none;
+    margin-left: 30rem;
+    margin-right: 28rem;
+    padding-inline: 1.5rem;
     text-align: left;
     
 }
