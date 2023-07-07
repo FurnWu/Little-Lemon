@@ -1,0 +1,20 @@
+@import url(https://fonts.googleapis.com/css?family=Markazi+Text);
+@import url(https://fonts.googleapis.com/css?family=Karla);
+
+.about-us {
+    background-color: #495E57;
+    display: inline-flex;
+}
+.about-text {
+    margin-left: 15rem;
+    margin-right: 30rem;
+}
+.about-us p {
+    font-family: 'Karla';
+    color: white;
+    text-align: left;
+}
+
+.about-us h1, h2 {
+    text-align: left;
+}

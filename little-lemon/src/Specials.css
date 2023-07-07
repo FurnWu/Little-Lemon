@@ -11,6 +11,7 @@
   display: flex;
   margin-inline: 16rem;
   padding-top: 6rem;
+  flex-wrap: wrap;
 }
 
 .gallery {
@@ -80,9 +81,7 @@
     width: 24%;
     margin-top: 0.1rem;
     margin-inline: -1.3rem;
-    
-    
-    
+
   }
   
 
@@ -95,6 +94,19 @@
   
   @media only screen and (max-width: 500px) {
     .responsive {
+      width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 700px) {
+    .specials-header {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .specials-header {
       width: 100%;
     }
   }

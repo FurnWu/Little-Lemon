@@ -88,3 +88,24 @@ h2 {
     width: 300px;
     
   }
+
+  @media (min-width: 700px) and (max-width: 1050) {
+    .foodhero {
+      margin-left: -2em;
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .foodhero {
+      display: none;
+    }
+  }
+
+  @media (max-width: 800px) {
+    .foodhero {
+      display: none;
+    }
+  }
+
+ 

@@ -20,7 +20,7 @@ nav {
   font-family: 'Karla';
   font-size: 18px; font-weight: 600;
   background-color: #EDEFEE;
-
+  flex-wrap: wrap;
 }
 
 nav ul li {
