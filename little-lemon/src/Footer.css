@@ -1,0 +1,27 @@
+@import url(https://fonts.googleapis.com/css?family=Markazi+Text);
+@import url(https://fonts.googleapis.com/css?family=Karla);
+
+.footer {
+    display: inline-flex;
+    margin: 0rem;
+    background-color: #EDEFEE;
+    padding-block: 2rem;
+    color: #495E57;
+    font-family: "Karla";
+}
+
+.footer-logo img {
+    width: 5rem;
+}
+
+.navigation {
+    text-align: left;
+}
+
+.contact {
+    text-align: left;
+}
+
+.social-media {
+    text-align: left;
+}
