@@ -60,3 +60,22 @@
     background-color: whitesmoke;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+@media (min-width: 700px) and (max-width: 1050) {
+    .image-stack {
+      margin-left: -2em;
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .image-stack {
+      display: none;
+    }
+  }
+
+  @media (max-width: 800px) {
+    .image-stack {
+      display: none;
+    }
+  }

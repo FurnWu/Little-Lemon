@@ -30,12 +30,8 @@ var dfaultDate = curr.toISOString().substring(0,10);
 
     const[date, setDate] = useState(dfaultDate)
     const[chosenTime, setChosenTime] = useState("")
-   let defaultTime = fetchAPI(date)
+    let defaultTime = fetchAPI(date)
     const listDefaultTime = defaultTime.map(time => <option>{time}</option>)
-   
-    
-
-
     const[guests, setGuests] = useState("1")
     const[occasion, setOccasion] = useState("F")
    
@@ -135,17 +131,14 @@ console.log(occasion);
     <input type="number" placeholder="1" min="1" max="12" id="guests" disabled={isDisabled}
            value = {guests}  onChange={(e) => setGuests(e.target.value)}   />
 </div>
-   
-
 </div>
+<p style={{textAlign:"left", color: "red", fontSize: "12px", marginLeft:"31.5rem"}}>* required</p>
 
-<br></br>
    <div className="textbox">
       <label htmlFor="message">Message</label><br></br>
       <textarea id="message" name="message" placeholder="Additional request..." disabled={isDisabled} value={formData.message} onChange={handleChange}/>
    <br></br>
    </div>
-
    <input type="submit" value="Make Your reservation" onSubmit={handleSubmit} /> 
    <br></br>
    <button onClick={handleSubmitClick}>Submit</button>
