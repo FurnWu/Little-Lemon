@@ -12,10 +12,10 @@ function About() {
     </div>
     <div className='image-stack'>
         <div className='image-top'>
-            <img src={restaurant} alt="about little lemon"/>
+            <img src={MnA} alt="Mario and Adrian" style={{width:"300px"}}/>
         </div>
         <div className='image-bottom'>
-            <img src={MnA} alt="Mario and Adrian"/>
+            <img src={restaurant} alt="about little lemon" style={{width:"250px"}} />
         </div>
     </div>
 </div>

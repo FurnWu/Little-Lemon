@@ -4,10 +4,13 @@
 .about-us {
     background-color: #495E57;
     display: inline-flex;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
 }
 .about-text {
-    margin-left: 15rem;
-    margin-right: 30rem;
+    background-color: none;
+    margin-left: 13rem;
+    flex: 50%;
 }
 .about-us p {
     font-family: 'Karla';
@@ -17,4 +20,43 @@
 
 .about-us h1, h2 {
     text-align: left;
+}
+
+.image-stack {
+    background-color:none;
+    Position: relative;
+    margin-left: 3rem;
+   margin-right: 5rem;
+   margin-top: 3rem;
+   flex:50%;
+}
+
+.image-top {
+    position: relative;
+    margin-top: 2rem;
+
+}
+
+.image-bottom {
+    right: 15rem;
+    top: 8rem;
+    position: absolute;
+}
+
+.image-top img {
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.image-bottom img {
+    border: 1px solid whitesmoke;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+    background-color: whitesmoke;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
