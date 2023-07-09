@@ -1,11 +1,11 @@
 import BookingForm from "./BookingForm";
-import { useReducer } from "react";
-import { fetchAPI } from "./DataAPI";
+//import { useReducer } from "react";
+//import { fetchAPI } from "./DataAPI";
 
 
 
 
-function updateTimes(state, action) {
+/*function updateTimes(state, action) {
   switch(action.type) {
     case 'initialTimes': {
       return {times : fetchAPI()};
@@ -32,7 +32,7 @@ function updateTimes(state, action) {
         <p>Hello! You are {availableTimes.age}.</p>
       </>
     );
-  }
+  }*/
   
 
 
@@ -40,7 +40,7 @@ export function Booking() {
 
     return(
         <div style={{backgroundColor:"#495E57"}}>
-            <h1>Reservations</h1>
+            <h1 style={{color:"#F4CE14"}}>Reservations</h1>
             
             <BookingForm />
             

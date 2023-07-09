@@ -164,6 +164,62 @@ textarea {
 }
 
 
+.edit-button {
+    background-color: #EE9972;
+    border: none;
+    color: black; font-family: 'Karla'; font-weight: bolder;
+    padding: 10px 26px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+    margin-left: 1rem;
+    box-shadow: 0 2px 2px 0 #333333;
+}
 
+.edit-button:hover {
+    background-color: #EE9972;
+    box-shadow: 0 5px 1px #333333;
+}
+
+.edit-button:active {
+  background-color: #EE9972;
+  box-shadow: 1 4px #333333;
+  transform: translateY(1px);
+} 
+
+.booking-button {
+    background-color: #F4CE14;
+    border: none;
+    color: black; font-family: 'Karla'; font-weight: bolder;
+    padding: 10px 26px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+    margin-left: 1rem;
+    box-shadow: 0 2px 2px 0 #333333;
+}
   
-  
+.booking-button:hover {
+    background-color: #F4CE14;
+    box-shadow: 0 5px 1px #333333;
+}
+
+.booking-button:active {
+  background-color: #F4CE14;
+  box-shadow: 1 4px #333333;
+  transform: translateY(1px);
+} 
+
+.booking-button:disabled {
+    background-color: silver;
+    box-shadow: 0 2px 2px 0 #333333;
+    color: gray; font-family: 'Karla'; font-weight: bolder;
+}

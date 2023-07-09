@@ -63,6 +63,7 @@ console.log(formData);
 
    const handleEditClick = (e) => {
       setIsDisabled(false)
+      
       e.preventDefault();
    }
  
@@ -124,12 +125,12 @@ console.log(occasion);
    <select id ="occasion" disabled={isDisabled} value={occasion} onChange={(e) => setOccasion(e.target.value)}>
    <optgroup label="Choose you occasion">
       <option hidden="true" value="F">In what occasion?</option>
-      <option value="A">Eat and Chill</option>
-      <option value="B">Friends/Family Reuion</option>
-      <option value="C">Birthday</option>
-      <option value="D">Anniversary</option>
-      <option value="E">Engagement</option>
-      <option value="G">Other</option>
+      <option value="Eat and Chill">Eat and Chill</option>
+      <option value="Friends/Family Reuion">Friends/Family Reuion</option>
+      <option value="Birthday">Birthday</option>
+      <option value="Anniversary">Anniversary</option>
+      <option value="Engagement">Engagement</option>
+      <option value="Other">Other</option>
    </optgroup>
    </select>
    </div>
@@ -151,10 +152,12 @@ console.log(occasion);
    {/*<input type="submit" value="Make Your reservation" onSubmit={handleSubmit} />*/}
    <br></br>
    {/*<button onClick={handleSubmitClick}>Submit</button>*/}
-
-   <button onClick={handleEditClick}>Edit</button>
-
-   <button type="submit" onSubmit={handleSubmit} disabled={!getIsFormValid()} >Make Your Reservation</button>
+   <div className="form-button">
+      
+      <button className="booking-button" type="submit" onSubmit={handleSubmit} disabled={!getIsFormValid()} >Book Now!</button>
+      
+   </div>
+   
 </form>
 <br></br>
 <Confirmation/>
@@ -164,11 +167,16 @@ console.log(occasion);
 function Confirmation() {
    if (isDisabled)
 {return (
-   <div>
-      <p>{formData.firstName}</p>
-      <p>{date}</p>
-      
-      
+   <div style={{backgroundColor:"#EDEFEE"}}>
+      <h2>Please recheck the information</h2>
+      <h3>Name: {formData.firstName}&nbsp;&nbsp;{formData.lastName}</h3>
+      <h3>Date and Time: {date}/&nbsp;{chosenTime}</h3>
+      <h3>Number of Guests: {guests}</h3>
+      <h3>Occasion: {occasion}</h3>
+      <h3>Additional Request: {formData.message}</h3>
+      <h3>Phone Number: {formData.phone}</h3>
+      <h3>Email: {formData.email}</h3>
+      <button className="edit-button" onClick={handleEditClick}>Edit</button>
    </div>
 )
 }
