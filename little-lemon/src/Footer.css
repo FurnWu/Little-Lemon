@@ -3,25 +3,104 @@
 
 .footer {
     display: inline-flex;
-    margin: 0rem;
+    width: 100%;
     background-color: #EDEFEE;
-    padding-block: 2rem;
+    padding-top: 2rem;
     color: #495E57;
     font-family: "Karla";
+    padding-inline: 3rem;
+    flex-wrap: wrap;
 }
-
+.footer-logo {
+    margin-left: 0rem;
+    background-color: none;
+    flex-wrap: wrap;
+}
 .footer-logo img {
-    width: 5rem;
+    width: 5.4rem;
+    margin-top: 1rem;
+    
 }
 
 .navigation {
+    width: 15rem;
     text-align: left;
+    background-color: none;
+    flex-wrap: wrap;
 }
 
 .contact {
     text-align: left;
+    background-color: none;
+    width: 20rem;
+    flex-wrap: wrap;
 }
 
 .social-media {
+    width: 20rem;
     text-align: left;
+    background-color: none;
+    flex-wrap: wrap;
 }
+
+.copyright {
+    background-color: none;
+    text-align: right;
+    width: 30rem;
+    align-content: end;
+    border-bottom: 2px solid #495E57;
+    color: #495E57;
+    margin-inline: 54.5rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 700px) and (max-width: 1050) {
+    .footer-logo {
+      margin-left: -2em;
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .footer-logo {
+      display: none;
+    }
+  }
+  @media (min-width: 700px) and (max-width: 1050) {
+    .navigation {
+      margin-left: -2em;
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .navigation {
+      display: none;
+    }
+  }
+  @media (min-width: 700px) and (max-width: 1050) {
+    .contact {
+      margin-left: -2em;
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .contact {
+      display: none;
+    }
+  }
+
+  @media (min-width: 700px) and (max-width: 1050) {
+    .social-media {
+      margin-left: -2em;
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .social-media {
+      display: none;
+    }
+  }

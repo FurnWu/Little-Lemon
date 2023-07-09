@@ -7,14 +7,16 @@ body {
 }
 
 form {
-    background-color: #EDEFEE;
+    background-color: #495E57;
     font-family: 'Karla';
+    font-weight: 570;
+    color: #f8f8f8;
     padding-block: 2rem;
-    border-radius: 16px;
+    
 }   
 
 sup {
-    color: red;
+    color: #F4CE14;
 }
 
 .fullname {
@@ -103,36 +105,42 @@ input[type=text] {
     border-radius: 4px;
     padding: 6px 12px;
     border: 2px solid grey;
+    background-color: #EDEFEE;
 }
 
 input[type=tel] {
     border-radius: 4px;
     padding: 6px 12px;
     border: 2px solid grey;
+    background-color: #EDEFEE;
 }
 
 input[type=email] {
     border-radius: 4px;
     padding: 6px 12px;
     border: 2px solid grey;
+    background-color: #EDEFEE;
 }
 
 input[type=date] {
     border-radius: 4px;
     padding: 6px 12px;
     border: 2px solid grey;
+    background-color: #EDEFEE;
 }
 
 select {
     border-radius: 4px;
     padding: 6px 12px;
     border: 2px solid grey;
+    background-color: #EDEFEE;
 }
 
 input[type=number] {
     border-radius: 4px;
     padding: 6px 12px;
     border: 2px solid grey;
+    background-color: #EDEFEE;
 }
 
 textarea {
@@ -142,7 +150,7 @@ textarea {
     box-sizing: border-box;
     border: 2px solid grey;
     border-radius: 4px;
-    background-color: #f8f8f8;
+    background-color: #EDEFEE;
     resize: none;
   }
 
@@ -154,6 +162,7 @@ textarea {
     text-align: left;
     
 }
+
 
 
   

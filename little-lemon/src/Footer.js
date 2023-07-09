@@ -3,6 +3,7 @@ import footerlogo from './Assets/logo_green.png'
 import {FaFacebook, FaInstagram, FaTwitter} from "react-icons/fa";
 function Footer() {
     return(
+        <div style={{backgroundColor:"#EDEFEE", paddingBottom:"1rem"}}>
         <div className="footer">
             <div className="footer-logo">
                 <img src={footerlogo} alt="footer logo"/>
@@ -34,7 +35,12 @@ function Footer() {
                     <ul style={{paddingBottom:"0.2rem"}}><FaTwitter/> @little.lemon_chicago</ul>
                 </ul>
             </div>
+
+                
+        </div> 
+           <ul className='copyright' style={{fontFamily:"Markazi", fontSize:"17px", paddingBottom:"0.5rem"}}>Copyright Little Lemon Restaurant</ul>
         </div>
+        
     );
 };
 

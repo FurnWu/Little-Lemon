@@ -9,7 +9,8 @@ import { fetchAPI } from "./DataAPI";
   const handleChange = (event) => {
     const { name, value } = event.target;
     setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
-    if (value.length < 5) {
+
+    if (value.length < 2) {
       setInputError('Input must be at least 2 characters');
     } else {
       setInputError(null);
@@ -34,23 +35,31 @@ var dfaultDate = curr.toISOString().substring(0,10);
     const listDefaultTime = defaultTime.map(time => <option>{time}</option>)
     const[guests, setGuests] = useState("1")
     const[occasion, setOccasion] = useState("F")
-   
+
+    /*const clearForm = () => {
+      setFormData({firstName: "", lastName: "",email: "",phone: "",message: ""});
+      setDate(dfaultDate);
+      setChosenTime("");
+      setGuests("1");
+      setOccasion("F");
+    };*/
+
    const handleDateChange = (e) => {
       setDate(e.target.value);
-      
-      
    }
    //console.log(fetchAPI(date));
     const handleSubmit = (e) => {
       setIsDisabled(true)
       e.preventDefault();
-      
+      alert("Reservation Completed!");
+      //clearForm();
    }
 console.log(formData);
-   const handleSubmitClick = (e) => {
+
+   /*const handleSubmitClick = (e) => {
       setIsDisabled(true)
       e.preventDefault();
-   }
+   }*/
 
    const handleEditClick = (e) => {
       setIsDisabled(false)
@@ -63,7 +72,7 @@ console.log(guests);
 console.log(occasion);
 
     return(
-<div><form style={{display: "grid; max-width: 200px; gap: 20px" }}>
+<div><form style={{display: "grid; max-width: 200px; gap: 20px" }} onSubmit={handleSubmit}>
 <div className="fullname">
    <div className="firstname"><label htmlFor="firstName">First Name<sup>*</sup></label><br></br>
    <input type="text" id="firstName" name="firstName" 
@@ -72,11 +81,11 @@ console.log(occasion);
             value={formData.firstName} 
             onChange={handleChange}
             required />
-            {inputError && <div style={{ color: 'red', fontSize: '12px' }}>{inputError}</div>}
+            {inputError && <div style={{ color: '#F4CE14', fontSize: '12px' }}>{inputError}</div>}
    </div>
    <div className="lastname"><label htmlFor="lasttName">Last Name<sup>*</sup></label><br></br>
    <input type="text" id="lastName" name="lastName" disabled={isDisabled} placeholder="Your last name ..." value={formData.lastName} onChange={handleChange} required/>
-      {inputError && <div style={{ color: 'red', fontSize: '12px' }}>{inputError}</div>}
+      {inputError && <div style={{ color: '#F4CE14', fontSize: '12px' }}>{inputError}</div>}
    </div>
 </div>
 <br></br>
@@ -132,22 +141,23 @@ console.log(occasion);
            value = {guests}  onChange={(e) => setGuests(e.target.value)}   />
 </div>
 </div>
-<p style={{textAlign:"left", color: "red", fontSize: "12px", marginLeft:"31.5rem"}}>* required</p>
+<p style={{textAlign:"left", color: "#F4CE14", fontSize: "12px", marginLeft:"31.5rem"}}>* Required</p>
 
    <div className="textbox">
       <label htmlFor="message">Message</label><br></br>
       <textarea id="message" name="message" placeholder="Additional request..." disabled={isDisabled} value={formData.message} onChange={handleChange}/>
    <br></br>
    </div>
-   <input type="submit" value="Make Your reservation" onSubmit={handleSubmit} /> 
+   {/*<input type="submit" value="Make Your reservation" onSubmit={handleSubmit} />*/}
    <br></br>
-   <button onClick={handleSubmitClick}>Submit</button>
+   {/*<button onClick={handleSubmitClick}>Submit</button>*/}
+
    <button onClick={handleEditClick}>Edit</button>
-   <button onSubmit={handleSubmit} disabled={!getIsFormValid()} >Book Now</button>
+
+   <button type="submit" onSubmit={handleSubmit} disabled={!getIsFormValid()} >Make Your Reservation</button>
 </form>
 <br></br>
-      
-      <Confirmation />
+<Confirmation/>
 </div>
  );
 
@@ -164,6 +174,7 @@ function Confirmation() {
 }
 
 };
+
     };
 
 
