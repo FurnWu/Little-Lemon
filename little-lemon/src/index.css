@@ -12,7 +12,7 @@ form {
     font-weight: 570;
     color: #f8f8f8;
     padding-block: 2rem;
-    
+    display: grid;
 }   
 
 sup {
@@ -222,4 +222,41 @@ textarea {
     background-color: silver;
     box-shadow: 0 2px 2px 0 #333333;
     color: gray; font-family: 'Karla'; font-weight: bolder;
+}
+
+.confirm h3 {
+    font-family: "Karla";
+    margin-left: 31rem;
+}
+
+.confirm-button {
+    background-color: #495E57;
+    border: none;
+    color: whitesmoke; font-family: 'Karla'; font-weight: bolder;
+    padding: 10px 26px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+    margin-left: 1rem;
+    box-shadow: 0 2px 2px 0 #333333;
+}
+
+.confirm-button:hover {
+    background-color: #495E57;
+    box-shadow: 0 5px 1px #333333;
+}
+
+.confirm-button:active {
+  background-color: #495E57;
+  box-shadow: 1 4px #333333;
+  transform: translateY(1px);
+} 
+
+.res-button {
+    text-align: center;
+    padding-block: 1rem;
 }
