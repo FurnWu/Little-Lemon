@@ -1,5 +1,5 @@
 import logo from './Assets/Logo.svg'
-import './Nav.css';
+import './Styling/Nav.css';
 import {Routes, Route, Link} from 'react-router-dom';
 import Home from './Homepage';
 import {Booking} from './BookingPage';

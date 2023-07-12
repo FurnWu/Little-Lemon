@@ -1,4 +1,4 @@
-import './Testimonial.css';
+import './Styling/Testimonial.css';
 import rating from './Assets/stars.png'
 
 const comments = [

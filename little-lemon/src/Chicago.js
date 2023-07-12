@@ -1,4 +1,4 @@
-import './About.css';
+import './Styling/About.css';
 import restaurant from "./Assets/restaurant.jpg";
 import MnA from "./Assets/Mario-Adrian.jpg";
 function About() {

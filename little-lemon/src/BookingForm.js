@@ -2,6 +2,7 @@ import { useState, useRef} from "react";
 import { validateEmail } from "./utils";
 import { fetchAPI } from "./DataAPI";
 import {VscWarning} from "react-icons/vsc";
+import './Styling/BookingForm.css'
  function BookingForm() {
    
    const hen = useRef(null);

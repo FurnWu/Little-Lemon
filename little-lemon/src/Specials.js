@@ -1,4 +1,4 @@
-import './Specials.css';
+import './Styling/Specials.css';
 import deliveryIcon from './Assets/delivery.svg'
 
 const specialmenu = [
