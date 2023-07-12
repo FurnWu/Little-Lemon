@@ -1,6 +1,7 @@
 import './Styling/Footer.css';
 import footerlogo from './Assets/logo_green.png'
 import {FaFacebook, FaInstagram, FaTwitter} from "react-icons/fa";
+import {Link} from 'react-router-dom';
 function Footer() {
     return(
         <div style={{backgroundColor:"#EDEFEE", paddingBottom:"1rem"}}>
@@ -11,10 +12,10 @@ function Footer() {
             <div className="navigation">
                <ul>
                     <ul style={{fontWeight:'bold', fontFamily:"Markazi", fontSize:"18px", paddingBottom:"0.5rem"}}>Navigation</ul>
-                    <ul style={{paddingBottom:"0.2rem"}}>Home</ul>
-                    <ul style={{paddingBottom:"0.2rem"}}>About</ul>
+                    <ul style={{paddingBottom:"0.2rem"}}><Link to="/" className="nav-item" style={{ textDecoration: 'none' }}>Home</Link></ul>
+                    <ul style={{paddingBottom:"0.2rem"}}><Link to="/about-us" className="nav-item" style={{ textDecoration: 'none' }}>About</Link></ul>
                     <ul style={{paddingBottom:"0.2rem"}}>Menu</ul>
-                    <ul style={{paddingBottom:"0.2rem"}}>Reservations</ul>
+                    <ul style={{paddingBottom:"0.2rem"}}><Link to="/reservations" className="nav-item" style={{ textDecoration: 'none' }}>Reservations</Link></ul>
                     <ul style={{paddingBottom:"0.2rem"}}>Order Online</ul>
                     <ul style={{paddingBottom:"0.2rem"}}>Login</ul>
                </ul>
@@ -43,5 +44,6 @@ function Footer() {
         
     );
 };
+
 
 export default Footer;

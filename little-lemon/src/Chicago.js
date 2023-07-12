@@ -3,7 +3,7 @@ import restaurant from "./Assets/restaurant.jpg";
 import MnA from "./Assets/Mario-Adrian.jpg";
 function About() {
     return(
-<div className='about-us'>
+<div className='about-us' id="about-us">
     <div className="about-text">
      <h1 style={{color: '#F4CE14'}}>Little Lemon</h1>
      <h2 style={{color: 'white'}}>Chicago</h2>

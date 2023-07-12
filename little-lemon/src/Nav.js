@@ -10,7 +10,7 @@ function Nav() {
     
         <ul>
             <li><Link to="/" className="nav-item" style={{ textDecoration: 'none' }}>Home</Link></li>
-            <li>About</li>
+            <li><Link to="/about-us" className="nav-item" style={{ textDecoration: 'none' }}>About</Link></li>
             <li>Menu</li>
             <li><Link to="/reservations" className="nav-item" style={{ textDecoration: 'none' }}>Reservations</Link></li>
             <li>Order Online</li>
@@ -24,6 +24,7 @@ function Nav() {
 
     );
 };
+
 
 
 export default Nav;

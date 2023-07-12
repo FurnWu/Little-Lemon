@@ -2,6 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Karla);
 
 .about-us {
+  margin-top: 5rem;
     background-color: #495E57;
     display: inline-flex;
     padding-top: 1.5rem;
