@@ -39,7 +39,7 @@ import BookingForm from "./BookingForm";
 export function Booking() {
 
     return(
-        <div style={{backgroundColor:"#495E57"}}>
+        <div style={{backgroundColor:"#495E57", paddingTop:"5.2rem"}}>
             <h1 style={{color:"#F4CE14"}}>Reservations</h1>
             
             <BookingForm />

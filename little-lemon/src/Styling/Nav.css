@@ -11,6 +11,7 @@
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
+  z-index: 1;
 }
 
 nav {
@@ -24,6 +25,7 @@ nav {
   font-size: 18px; font-weight: 600;
   background-color: #EDEFEE;
   flex-wrap: wrap;
+  border-bottom: 1.7px solid #E0E3E1;
 }
 
 nav ul li {
