@@ -1,8 +1,7 @@
 import logo from './Assets/Logo.svg'
 import './Styling/Nav.css';
-import {Routes, Route, Link} from 'react-router-dom';
-import Home from './Homepage';
-import {Booking} from './BookingPage';
+import {Link} from 'react-router-dom';
+
 function Nav() {
     return (
     <div className='nav-main'>
@@ -19,10 +18,7 @@ function Nav() {
         </ul>
     
         </nav>
-    <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route path="/reservations" element={<Booking />} />
-    </Routes>
+    
 
     </div>
 
