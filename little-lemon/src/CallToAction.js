@@ -1,7 +1,6 @@
 import heroImage from './Assets/restauranfood.jpg';
-import {Booking} from './BookingPage';
 import './Styling/CallToAction.css';
-import {Routes, Route, Link} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 function Hero() {
 return(
     
@@ -21,10 +20,6 @@ return(
                     <button className='hero-btn'>Reserve a Table</button>
                 </Link>
             </div>
-
-        <Routes>
-            <Route path="/reservations" element={<Booking />} />
-        </Routes>
         </div>
         <section>
                 <img src={heroImage} alt="Restaurant Food" className='foodhero' />

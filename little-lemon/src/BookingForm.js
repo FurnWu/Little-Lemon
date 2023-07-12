@@ -2,6 +2,7 @@ import { useState, useRef} from "react";
 import { validateEmail } from "./utils";
 import { fetchAPI } from "./DataAPI";
 import {VscWarning} from "react-icons/vsc";
+import {Link} from 'react-router-dom';
 import './Styling/BookingForm.css'
  function BookingForm() {
    
@@ -208,7 +209,9 @@ function Confirmation() {
       </div>
       <div className="res-button">
          <button id="editbtn" className="edit-button" onClick={handleEditClick}>Edit</button>
+         <Link to="/comfirm-reservation" style={{ textDecoration: 'none' }}>
          <button className="confirm-button">Confirm</button>
+         </Link>
       </div>
       
    </div>
