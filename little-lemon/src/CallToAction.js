@@ -4,8 +4,8 @@ import './Styling/CallToAction.css';
 import {Routes, Route, Link} from 'react-router-dom';
 function Hero() {
 return(
-    <div className="banner">
-
+    
+        <div className="banner">
         <div className="hero">
             <header>
                 <h1 style={{color: '#F4CE14'}}>Little Lemon</h1>
@@ -29,8 +29,9 @@ return(
         <section>
                 <img src={heroImage} alt="Restaurant Food" className='foodhero' />
         </section>
-
     </div>
+    
+    
 
 );
 };
