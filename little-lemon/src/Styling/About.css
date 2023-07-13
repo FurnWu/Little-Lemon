@@ -2,11 +2,11 @@
 @import url(https://fonts.googleapis.com/css?family=Karla);
 
 .about-us {
-  margin-top: 5rem;
+  margin-top: 4rem;
     background-color: #495E57;
     display: inline-flex;
     padding-top: 1.5rem;
-    padding-bottom: 2rem;
+    padding-bottom: 4rem;
 }
 .about-text {
     background-color: none;

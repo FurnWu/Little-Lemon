@@ -28,8 +28,8 @@ const specialmenu = [
 
 function Specials() {
     return(
-        <div>
-          <div className='specials-header'>
+        <div style={{backgroundColor:"white"}}>
+          <div className='specials-header' >
             <h1 style={{fontSize: '57px', backgroundColor:'white', paddingBottom:'1rem', paddingRight:'20.5rem'}}>This week specials!</h1>
             <button style={{marginBlock:'1.3rem', fontSize:'16px'}} className='hero-btn'>Online Menu</button>
           </div>
