@@ -14,7 +14,7 @@ function Footer() {
                     <ul style={{fontWeight:'bold', fontFamily:"Markazi", fontSize:"18px", paddingBottom:"0.5rem"}}>Navigation</ul>
                     <ul style={{paddingBottom:"0.2rem"}}><Link to="/">Home</Link></ul>
                     <ul style={{paddingBottom:"0.2rem"}}><Link to="/about-us">About</Link></ul>
-                    <ul style={{paddingBottom:"0.2rem"}}>Menu</ul>
+                    <ul style={{paddingBottom:"0.2rem"}}><Link to="/online-menu" style={{ textDecoration: 'none' }}>Menu</Link></ul>
                     <ul style={{paddingBottom:"0.2rem"}}><Link to="/reservations">Reservations</Link></ul>
                     <ul style={{paddingBottom:"0.2rem"}}>Order Online</ul>
                     <ul style={{paddingBottom:"0.2rem"}}>Login</ul>

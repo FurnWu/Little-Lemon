@@ -34,6 +34,7 @@ nav ul li {
   list-style: none;
   padding-left: 1rem;
   padding-right: 1rem;
+  margin-bottom: 1rem;
 }
 
 nav a:link {
@@ -58,3 +59,23 @@ img {
   padding-top: 0.2rem;
   width: 180px;
 }
+
+.nav-toggle {
+  font-size: 1.5rem;
+  color: var(--clr-primary-5);
+  background: transparent;
+  border-color: transparent;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 800px) {
+  .nav-toggle {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .nav-logo {
+    display: none;
+  }}

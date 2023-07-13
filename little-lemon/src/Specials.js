@@ -1,6 +1,6 @@
 import './Styling/Specials.css';
 import deliveryIcon from './Assets/delivery.svg'
-
+import {Link} from 'react-router-dom';
 const specialmenu = [
     {
         title: "Greek Salad",
@@ -31,7 +31,9 @@ function Specials() {
         <div style={{backgroundColor:"white"}}>
           <div className='specials-header' >
             <h1 style={{fontSize: '57px', backgroundColor:'white', paddingBottom:'1rem', paddingRight:'20.5rem'}}>This week specials!</h1>
+            <Link to="/online-menu" style={{ textDecoration: 'none' }}>
             <button style={{marginBlock:'1.3rem', fontSize:'16px'}} className='hero-btn'>Online Menu</button>
+          </Link>
           </div>
       {specialmenu.map((menu) => {
       const { title, price, description, getImageSrc } = menu;

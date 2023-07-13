@@ -96,7 +96,9 @@ console.log(guests);
 console.log(occasion);
 
     return(
-<div><form style={{display: "grid; max-width: 200px; gap: 20px" }} onSubmit={handleSubmit}>
+<div style={{backgroundColor:"#495E57", paddingTop:"5.2rem"}}>
+<h1 style={{color:"#F4CE14"}}>Reservations</h1>
+   <form style={{display: "grid; max-width: 200px; gap: 20px" }} onSubmit={handleSubmit}>
 <div className="fullname">
    <div className="firstname"><label htmlFor="firstName">First Name<sup>*</sup></label><br></br>
    <input type="text" id="firstName" name="firstName" 
