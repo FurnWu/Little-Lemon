@@ -12,10 +12,10 @@ function Footer() {
             <div className="navigation">
                <ul>
                     <ul style={{fontWeight:'bold', fontFamily:"Markazi", fontSize:"18px", paddingBottom:"0.5rem"}}>Navigation</ul>
-                    <ul style={{paddingBottom:"0.2rem"}}><Link to="/" className="nav-item" style={{ textDecoration: 'none' }}>Home</Link></ul>
-                    <ul style={{paddingBottom:"0.2rem"}}><Link to="/about-us" className="nav-item" style={{ textDecoration: 'none' }}>About</Link></ul>
+                    <ul style={{paddingBottom:"0.2rem"}}><Link to="/">Home</Link></ul>
+                    <ul style={{paddingBottom:"0.2rem"}}><Link to="/about-us">About</Link></ul>
                     <ul style={{paddingBottom:"0.2rem"}}>Menu</ul>
-                    <ul style={{paddingBottom:"0.2rem"}}><Link to="/reservations" className="nav-item" style={{ textDecoration: 'none' }}>Reservations</Link></ul>
+                    <ul style={{paddingBottom:"0.2rem"}}><Link to="/reservations">Reservations</Link></ul>
                     <ul style={{paddingBottom:"0.2rem"}}>Order Online</ul>
                     <ul style={{paddingBottom:"0.2rem"}}>Login</ul>
                </ul>
@@ -31,9 +31,9 @@ function Footer() {
             <div className="social-media">
                 <ul>
                     <ul style={{fontWeight:'bold', fontFamily:"Markazi", fontSize:"18px", paddingBottom:"0.5rem"}}>Social Media</ul>
-                    <ul style={{paddingBottom:"0.2rem"}}><FaFacebook/> Little Lemon Chicago</ul>
-                    <ul style={{paddingBottom:"0.2rem"}}><FaInstagram/> @little.lemon_chicago</ul>
-                    <ul style={{paddingBottom:"0.2rem"}}><FaTwitter/> @little.lemon_chicago</ul>
+                    <ul style={{paddingBottom:"0.2rem"}}><a href='https://www.facebook.com/'><FaFacebook/> &nbsp;Little Lemon Chicago</a></ul>
+                    <ul style={{paddingBottom:"0.2rem"}}><a href='https://www.instagram.com/'><FaInstagram/>&nbsp;&nbsp;@little.lemon_chicago</a></ul>
+                    <ul style={{paddingBottom:"0.2rem"}}><a href='https://twitter.com/'><FaTwitter/>&nbsp;&nbsp;@little.lemon_chicago</a></ul>
                 </ul>
             </div>
 

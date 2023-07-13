@@ -29,6 +29,24 @@
     flex-wrap: wrap;
 }
 
+.footer a:link {
+  color: #495E57;
+  text-decoration: none;
+}
+.footer a:visited {
+  color: #495E57;
+  text-decoration: none;
+}  
+.footer a:hover {
+  color: #495E57;
+  text-decoration: none;
+  font-weight: bold;
+}
+.footer a:active {
+  color: #495E57;
+  text-decoration: none;
+}
+
 .contact {
     text-align: left;
     background-color: none;
@@ -42,6 +60,7 @@
     background-color: none;
     flex-wrap: wrap;
 }
+
 
 .copyright {
     background-color: none;
