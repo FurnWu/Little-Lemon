@@ -1,0 +1,43 @@
+@import url(https://fonts.googleapis.com/css?family=Markazi+Text);
+@import url(https://fonts.googleapis.com/css?family=Karla);
+
+.responsiveIII {
+    font-family: "Karla";
+    display: inline-flex;
+    background-color: #EDEFEE;
+    margin: 2rem;
+    width: 16rem;
+    height: 24rem;
+    border-radius: 16px 16px 0px 0px;
+    box-shadow: 0 10px 20px 0 #333333;
+   
+}
+.food-layout {
+    text-align: left;
+}
+.food-header {
+    display: inline-flex;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+.food-name {
+    background-color: none;
+    width: 10rem;
+}
+.food-price {
+    background-color: none;
+    width: 4rem;
+    text-align: right;
+    color: coral;
+}
+.food-profile {
+    width: 14rem; 
+    background-color: none;
+    margin: 1rem;
+    margin-right: 1rem;
+}
+
+.food-pic {
+    width: 16rem; height:12rem; object-fit: cover; object-position: 50% 50%;
+    border-radius: 16px 16px 0px 0px;
+}
