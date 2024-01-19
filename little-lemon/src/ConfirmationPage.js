@@ -3,7 +3,8 @@ import {Link} from 'react-router-dom';
 
 export default function ConfirmPage() {
     return (
-    <div style={{paddingTop:"5.5rem", paddingBottom:"3rem"}}>
+    <div style={{paddingTop:"8rem", paddingBottom:"3rem"}}>
+        <div style={{background: "#EDEFEE", paddingBlock:"3rem", marginBlock:"2rem", marginInline:"16rem", boxShadow:"0 10px 20px 0 dark gray"}}>
     <h1 style={{fontSize:"50px"}}>Reservation Confirmed!</h1>
     
     <h1 style={{color:"green"}}><SiCachet /></h1><br></br>
@@ -18,6 +19,7 @@ export default function ConfirmPage() {
     <Link to="/" style={{ textDecoration: 'none' }}>
     <button className="confirm-button">Back to Home</button>
     </Link>
+    </div>
    </div>
     )
 };
